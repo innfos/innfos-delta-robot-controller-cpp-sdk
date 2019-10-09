@@ -15,11 +15,12 @@ make
 2个demo
 
 mode1:记录示教的点并记录
+
 mode2:执行示教点的轨迹
 
 
 ## 2.常用函数介绍
-###类函数:DeltaKinematics(Delta正逆运动学计算)
+### 类函数:DeltaKinematics(Delta正逆运动学计算)
 主要应用以下:
              delta基础参数:struct DeltaGeometricDim
                        	{
@@ -36,7 +37,7 @@ mode2:执行示教点的轨迹
 
 
 
-###类函数:speed_profile(s型曲线)
+### 类函数:speed_profile(s型曲线)
 主要应用以下:
             设置基本的s型曲线的参数:void set_parameters(double s,double f,double fs,double fe,double A,double D,double J)
             其中各种参数含义如下
@@ -60,7 +61,7 @@ mode2:执行示教点的轨迹
 
 
 
-###类函数:DeltaController(delta控制器)
+### 类函数:DeltaController(delta控制器)
 主要应用以下:
            记录delta示教的点:void subscribeStartRecordEFF();
            保存delta记录的点:void subscribeStartWriteEFF();
