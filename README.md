@@ -56,19 +56,19 @@ delta基础参数:struct DeltaGeometricDim
 
    其中各种参数含义如下
 
-    s:   position
+   s:   position
 
-    f:   max velocity
+   f:   max velocity
 
-    fs:  initial velocity
+   fs:  initial velocity
 
-    fe:  final velocity
+   fe:  final velocity
 
-    A:   max acceleration
+   A:   max acceleration
 
-    D:   min acceleration
+   D:   min acceleration
 
-    J:   max jerk
+   J:   max jerk
 
 
    计算S型曲线分段时间:void calculate_jerk_limit_profile_time()
@@ -77,11 +77,11 @@ delta基础参数:struct DeltaGeometricDim
 
    其中各种参数含义如下
 
-    t: time
+   t: time
 
-    PAVJ[0]: velocity
+   PAVJ[0]: velocity
 
-    PAVJ[1]: position
+   PAVJ[1]: position
 
 
 
@@ -90,15 +90,15 @@ delta基础参数:struct DeltaGeometricDim
 
 主要应用以下:
 
-    记录delta示教的点:void subscribeStartRecordEFF();
+   记录delta示教的点:void subscribeStartRecordEFF();
 
-    保存delta记录的点:void subscribeStartWriteEFF();
+   保存delta记录的点:void subscribeStartWriteEFF();
 
-    计算delta末端插补:void subscribeFKReadData_scurve(double s_vmax,double s_vinit ,double s_vend,double s_amax,double s_amin,double s_jerk);
+   计算delta末端插补:void subscribeFKReadData_scurve(double s_vmax,double s_vinit ,double s_vend,double s_amax,double s_amin,double s_jerk);
 
-    播放delta示教的插补点:void IKPlaybackCommand_Teach_scurve();
+   播放delta示教的插补点:void IKPlaybackCommand_Teach_scurve();
 
-    读取delta基本机构参数:void getDeltaGeometricDim(DeltaKinematics<double>::DeltaGeometricDim test_robot_dim);
+   读取delta基本机构参数:void getDeltaGeometricDim(DeltaKinematics<double>::DeltaGeometricDim test_robot_dim);
 
 
 
