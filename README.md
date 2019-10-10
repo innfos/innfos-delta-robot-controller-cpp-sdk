@@ -78,24 +78,27 @@ struct DeltaGeometricDim
 ### 类函数:speed_profile(s型曲线)
 主要应用以下:
 
-   设置基本的s型曲线的参数:void set_parameters(double s,double f,double fs,double fe,double A,double D,double J)
+   设置基本的s型曲线的参数:
+   
+   ```cpp
+   void set_parameters(double s,double f,double fs,double fe,double A,double D,double J)
 
-   其中各种参数含义如下
 
-   `s`:   position
+   //s: position
 
-   f:   max velocity
+   //f: max velocity
 
-   fs:  initial velocity
+   //fs: initial velocity
 
-   fe:  final velocity
+   //fe: final velocity
 
-   A:   max acceleration
+   //A: max acceleration
 
-   D:   min acceleration
+   //D: min acceleration
 
-   J:   max jerk
-
+   //J: max jerk
+   
+   ```
 
    计算S型曲线分段时间:void calculate_jerk_limit_profile_time()
 
