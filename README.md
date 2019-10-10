@@ -4,13 +4,13 @@
 ## 1.示例介绍与应用
 
 ```cpp
-cd innfos-delta-robot-controller-sdk/example
+$ cd innfos-delta-robot-controller-sdk/example
 
-mkdir build
+$ mkdir build
 
-cmake ..
+$ cmake ..
 
-make
+$ make
 ```
 
 
