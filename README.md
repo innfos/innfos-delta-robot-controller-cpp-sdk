@@ -23,7 +23,10 @@ mode2:执行示教点的轨迹
 ### 类函数:DeltaKinematics(Delta正逆运动学计算)
 主要应用以下:
 
-delta基础参数:struct DeltaGeometricDim
+delta基础参数:
+
+```cpp
+struct DeltaGeometricDim
 
 {
 
@@ -38,6 +41,7 @@ delta基础参数:struct DeltaGeometricDim
   RealDataType h;						  // lower legs prallelogram width [ mm ]
 
   RealDataType max_neg_angle;			  // max negative angle that each arm can achive ( knee above the fixed-base plane ) [ deg ]
+```
 
   RealDataType min_parallelogram_angle; // the limitation introduced by universal joints [ deg ]
                        	
@@ -56,7 +60,7 @@ delta基础参数:struct DeltaGeometricDim
 
    其中各种参数含义如下
 
-   s:   position
+   `s`:   position
 
    f:   max velocity
 
