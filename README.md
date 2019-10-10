@@ -100,17 +100,23 @@ struct DeltaGeometricDim
    
    ```
 
-   计算S型曲线分段时间:void calculate_jerk_limit_profile_time()
+   计算S型曲线分段时间:
+   
+   ```cpp
+   void calculate_jerk_limit_profile_time()
+   ```
 
-   计算S型曲线的插补点:void calculate_current_speed(double t,double PAVJ[])
+   计算S型曲线的插补点:
+   
+   ```cpp
+   void calculate_current_speed(double t,double PAVJ[])
 
-   其中各种参数含义如下
+   //t: time
 
-   t: time
+   //PAVJ[0]: velocity
 
-   PAVJ[0]: velocity
-
-   PAVJ[1]: position
+   //PAVJ[1]: position
+   ```
 
 
 
