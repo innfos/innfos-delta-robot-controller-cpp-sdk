@@ -53,7 +53,11 @@ struct DeltaGeometricDim
 };
 ```
              
-  逆运动学:int CalculateIpk(DeltaVector *v, int num);
+  delta逆运动学计算:
+  
+  ```cpp
+  int CalculateIpk(DeltaVector *v, int num);
+  ```
 
   正运动学:int CalculateFpk(DeltaVector *v, int num);
 
