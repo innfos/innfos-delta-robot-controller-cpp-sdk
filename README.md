@@ -57,6 +57,10 @@ struct DeltaGeometricDim
   
   ```cpp
   int CalculateIpk(DeltaVector *v, int num);
+  
+  //v: a pointer to the matrix of cartesian positions and joints vectors, which only joints are changed
+  
+  //num: a number of vectors in the matrix
   ```
 
   正运动学:int CalculateFpk(DeltaVector *v, int num);
