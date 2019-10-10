@@ -30,17 +30,17 @@ struct DeltaGeometricDim
 
 {
 
-  RealDataType sb;					  // base equilateral triangle side [ mm ]
+  RealDataType sb;					                  // base equilateral triangle side [ mm ]
 
-  RealDataType sp;					  // platform equilateral triangle side [ mm ]
+  RealDataType sp;					                 // platform equilateral triangle side [ mm ]
 
-  RealDataType L;						  // upper legs length [ mm ]
+  RealDataType L;						                // upper legs length [ mm ]
 
-  RealDataType l;						  // lower legs parallelogram length [ mm ]
+  RealDataType l;						               // lower legs parallelogram length [ mm ]
 
-  RealDataType h;						  // lower legs prallelogram width [ mm ]
+  RealDataType h;						              // lower legs prallelogram width [ mm ]
 
-  RealDataType max_neg_angle;			  // max negative angle that each arm can achive ( knee above the fixed-base plane ) [ deg ]
+  RealDataType max_neg_angle;			       // max negative angle that each arm can achive ( knee above the fixed-base plane ) [ deg ]
 
   RealDataType min_parallelogram_angle; // the limitation introduced by universal joints [ deg ]
                        	
