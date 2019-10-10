@@ -41,11 +41,11 @@ struct DeltaGeometricDim
   RealDataType h;						  // lower legs prallelogram width [ mm ]
 
   RealDataType max_neg_angle;			  // max negative angle that each arm can achive ( knee above the fixed-base plane ) [ deg ]
-```
 
   RealDataType min_parallelogram_angle; // the limitation introduced by universal joints [ deg ]
                        	
 };
+```
              
   逆运动学:int CalculateIpk(DeltaVector *v, int num);
 
