@@ -3,6 +3,8 @@
 
 ## 1.示例介绍与应用
 
+示例代码编译
+
 ```cpp
 $ cd innfos-delta-robot-controller-sdk/example
 
