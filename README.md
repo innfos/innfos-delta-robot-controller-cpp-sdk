@@ -81,7 +81,7 @@ struct DeltaGeometricDim
    设置基本的s型曲线的参数:
    
    ```cpp
-   void set_parameters(double s,double f,double fs,double fe,double A,double D,double J)
+   void set_parameters(double s,double f,double fs,double fe,double A,double D,double J);
 
 
    //s: position
@@ -103,13 +103,13 @@ struct DeltaGeometricDim
    计算S型曲线分段时间:
    
    ```cpp
-   void calculate_jerk_limit_profile_time()
+   void calculate_jerk_limit_profile_time();
    ```
 
    计算S型曲线的插补点:
    
    ```cpp
-   void calculate_current_speed(double t,double PAVJ[])
+   void calculate_current_speed(double t,double PAVJ[]);
 
    //t: time
 
@@ -141,6 +141,19 @@ struct DeltaGeometricDim
    
    ```cpp
    void subscribeFKReadData_scurve(double s_vmax,double s_vinit ,double s_vend,double s_amax,double s_amin,double s_jerk);
+   
+   //s_vmax: max velocity
+   
+   //s_vinit: init velocity
+   
+   //s_vend: end velocity
+   
+   //s_amax: max acceleration
+   
+   //s_amin: min acceleration
+   
+   //s_jerk: max jerk
+   
    ```
 
    播放delta示教的插补点:
@@ -153,6 +166,8 @@ struct DeltaGeometricDim
    
    ```cpp
    void getDeltaGeometricDim(DeltaKinematics<double>::DeltaGeometricDim test_robot_dim);
+   
+   //test_robot_dim: geometric basic parameters
    ```
 
 
