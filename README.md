@@ -2,6 +2,8 @@
 
 
 ## 1.示例介绍与应用
+
+```cpp
 cd innfos-delta-robot-controller-sdk/example
 
 mkdir build
@@ -9,6 +11,8 @@ mkdir build
 cmake ..
 
 make
+```
+
 
 可执行文件存储在build文件夹下
 
