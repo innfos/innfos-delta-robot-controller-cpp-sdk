@@ -125,15 +125,35 @@ struct DeltaGeometricDim
 
 主要应用以下:
 
-   记录delta示教的点:void subscribeStartRecordEFF();
+   记录delta示教的点:
+   
+   ```cpp
+   void subscribeStartRecordEFF();
+   ```
 
-   保存delta记录的点:void subscribeStartWriteEFF();
+   保存delta记录的点:
+   
+   ```cpp
+   void subscribeStartWriteEFF();
+   ```
 
-   计算delta末端插补:void subscribeFKReadData_scurve(double s_vmax,double s_vinit ,double s_vend,double s_amax,double s_amin,double s_jerk);
+   计算delta末端插补:
+   
+   ```cpp
+   void subscribeFKReadData_scurve(double s_vmax,double s_vinit ,double s_vend,double s_amax,double s_amin,double s_jerk);
+   ```
 
-   播放delta示教的插补点:void IKPlaybackCommand_Teach_scurve();
+   播放delta示教的插补点:
+   
+   ```cpp
+   void IKPlaybackCommand_Teach_scurve();
+   ```
 
-   读取delta基本机构参数:void getDeltaGeometricDim(DeltaKinematics<double>::DeltaGeometricDim test_robot_dim);
+   读取delta基本机构参数:
+   
+   ```cpp
+   void getDeltaGeometricDim(DeltaKinematics<double>::DeltaGeometricDim test_robot_dim);
+   ```
 
 
 
